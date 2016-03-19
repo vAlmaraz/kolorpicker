@@ -55,7 +55,7 @@ $(document).ready(function() {
              </ul>\
             </div>\
             <div class="x-close-box">X</div>\
-            <table id="palette-table" cellpadding="0" cellspacing="2" style="border-collapse: separate; border-spacing: 2px; padding: 0px;margin:0; width: 290px;">
+            <table id="palette-table" cellpadding="0" cellspacing="2" style="border-collapse: separate; border-spacing: 2px; padding: 0px;margin:0; width: 290px;">';
 
       for (var row in palettes[palette]) {
         html[palette] += '<tr>';
@@ -119,7 +119,7 @@ $(document).ready(function() {
     displayPicker(this);
   });
 
-  $(document).on("keyup", '.kolorPicker', function () {
+  $(document).on("input", '.kolorPicker', function () {
     if ($(this).val().charAt(0) != '#') {
       $(this).val('#' + $(this).val());
     }
@@ -130,8 +130,12 @@ $(document).ready(function() {
       $(this).val(preInput); // if this value is invalid, restore it to what was valid
     }
 
+    if ($(this).val().length > 7) {
+      $(this).val(preInput); // if this value is invalid, restore it to what was valid
+    }
+
     // call the change event on $(this) if you may have an assumed valid hex code
-    if ( ($(this).val().length != preInput.length) && ($(this).val().length ==  7) ) {
+    if ( ($(this).val().length != preInput.length) && ($(this).val().length =  7) ) {
       $(this).change();
     }
   });

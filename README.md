@@ -9,9 +9,9 @@ How to Implement
 
 ### Screenshot and Demo ###
 
-![kolorpicker](http://www.mailermailer.com/images/labs/picker.jpg)
+![kolorpicker](http://kamelkev.github.io/kolorpicker/images/picker.jpg)
 
-[Demo here](http://www.mailermailer.com/labs/projects/jQuery-kolorPicker.rwp)
+[Demo here](http://kamelkev.github.io/kolorpicker/)
 
 ### Full Example ###
 
@@ -49,4 +49,4 @@ This code has been developed under sponsorship of MailerMailer LLC.
 
 ### Copyright ###
 
-© 2001-2013 MailerMailer LLC. All Rights Reserved 
+© 2001–2016 MailerMailer LLC. All Rights Reserved.
